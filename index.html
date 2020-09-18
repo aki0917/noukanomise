@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".css/animate.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>農家の店みのり</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="flex is-between is-center">
+      <div class="header-left">
+        <div class="header-logo"><img src="./img/kanban1.png" width="550" alt="農家の店みのり"></div>
+      </div>
+
+      <div class="header-rigth">
+        <p class="header-tel">TEL: 0287-22-3339</p>
+        <div class="header-address"><a href="mailto:kminori@shop.rakuten.co.jp">kminori@shop.rakuten.co.jp</a></div>
+      </div>
+    </div>
+
+    <nav class="gnav">
+      <ul class="flex">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#item">商品一覧</a></li>
+        <li><a href="#Q &amp; A">Q &amp; A</a></li>
+        <li><a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cartempty/?shop_bid=">お買い物かご</a></li>
+        <li><a href="info.html">INFO</a></li>    
+      </ul>
+    </nav>
+  </header>
+  <!-- header　ここまで -->
+
+  <div class="mainvisual">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/slider01.jpg" width="90%" height="auto" alt="店外写真"/></div>
+          <div class="swiper-slide"><img src="./img/slider02.jpg" width="90%" height="auto" alt="店外写真"/></div>
+          <div class="swiper-slide"><img src="./img/slider03.jpg" width="90%" height="auto" alt="店外写真"/></div>
+					<div class="mainvisual_content">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination"></div>
+        </div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+  <script src="./js/swiper.min.js"></script> 
+	<script>
+		// スライダー
+		var mySwiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+      autoplay: {
+    　　delay: 2500,
+  　　},
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			}
+		});
+	</script>
+
+  <section id="news" class="news-wrap">
+    <h2 class="item-section-title">お知らせ</h2>
+    <dl class="news-list">
+      <dt>2020.9.12</dt>
+      <dt><a href="">チューリップ追加しました</a></dt>
+    </dl>
+    <dl class="news-list">
+      <dt>2020.9.12</dt>
+      <dt><a href="">チューリップ追加しました</a></dt>
+    </dl>
+    <dl class="news-list">
+      <dt>2020.9.12</dt>
+      <dt><a href="">チューリップ追加しました</a></dt>
+    </dl>
+    <dl class="news-list">
+      <dt>2020.9.12</dt>
+      <dt><a href="">チューリップ追加しました</a></dt>
+    </dl>
+  </section>
+
+  
+  <main class="item-wrap">
+    <h2 class="item-section-title">商品一覧</h2>
+    <section class="contact">
+      <div class="container">
+        <form action="get" method="https://esearch.rakuten.co.jp/rms/sd/esearch/vc">
+          <input type="search" name="search" id="search" placeholder="商品を検索する">
+          <button type="submit" class="btn btn-registar">検索する</button>
+        </form>
+      </div>
+    </section>
+    <section id="item"class="item-section">
+      <h3 class="item-title">除草剤</h3>
+      <div class="flex is-between">
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/raundup.png"　width="1px" alt="ラウンドアップマックスロード"></div>
+          <div class="item-card-body">
+            <h4>ラウンドアップ <br>
+              マックスロード 5.5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/basuta.jpg"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>畑作用除草剤 <br> 
+              バスタ液剤 5L</h4>
+          </div>
+        </a>
+      </div>
+      <p class="more-btn"><a href="#">&gt; 他の商品をみる</a></p>
+    </section>
+  
+  
+    <section class="item-section">
+      <h3 class="item-title">除草剤</h3>
+      <div class="flex is-between">
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+      </div>
+      <p class="more-btn"><a href="#">&gt; 他の商品をみる</a></p>
+    </section>
+  
+    <section class="item-section">
+      <h3 class="item-title">除草剤</h3>
+      <div class="flex is-between">
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/raundup.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤 <br>
+              グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+        <a class="item-card" href="">
+          <div class="item-image"><img src="./img/n001021.png"　width="1px" alt="グルホシネート"></div>
+          <div class="item-card-body">
+            <h4>非農耕地用除草剤グルホシネート18.5% 5L</h4>
+          </div>
+        </a>
+      </div>
+      <p class="more-btn"><a href="#">&gt; 他の商品をみる</a></p>
+
+      <div class="main-btn"><a href="#">商品一覧へ</a></div>
+    </section>
+  </main>
+
+  <section id="Q &amp; A" class="qa section">
+    <div class="qa_inner">
+      <h2 class="item-section-title">Q &amp; A</h2>
+      <dl class="qa_items">
+        <div class="qa_item accordion">
+          <dt class="accordion_head">注文後に農家の店みのりからのメールが届きません<span class="accordion_icon"></span></dt>
+          <dd class="accordion_body">
+            <div class="accordion_body-in">「おまかせ配送」を選択した場合や、メール便で複数個ご注文頂いた場合は、送料は表示されません。<br>
+              送料は当店で確定後、2営業日以内に改めてメールにてご連絡いたします。</div>
+          </dd>
+        </div>
+        <div class="qa_item accordion">
+          <dt class="accordion_head">明細書、領収書が同梱されていません。<span class="accordion_icon"></span></dt>
+          <dd class="accordion_body">
+            <div class="accordion_body-in">お客様個人情報保護及び環境に配慮して、明細書、領収書を同梱しておりません。
+              明細書・領収書に関するご案内はご注文時の備考欄、サンクスメール、下記URLに記載しておりますのでご確認下さい。
+              <a href="https://www.rakuten.ne.jp/gold/kminori/info/ryousyuusyo.html" target="_top">https://www.rakuten.ne.jp/gold/kminori/info/ryousyuusyo.html/</a>
+            </div>
+          </dd>
+        </div>
+        <div class="qa_item accordion">
+          <dt class="accordion_head">注文時に送料が表示されないのですが?<span class="accordion_icon"></span></dt>
+          <dd class="accordion_body">
+            <div class="accordion_body-in">「おまかせ配送」を選択した場合や、メール便で複数個ご注文頂いた場合は、送料は表示されません。
+              送料は当店で確定後、2営業日以内に改めてメールにてご連絡いたします。</div>
+          </dd>
+        </div>
+        <div class="qa_item accordion">
+          <dt class="accordion_head">農家の店？<span class="accordion_icon"></span></dt>
+          <dd class="accordion_body">
+            <div class="accordion_body-in">みのり!</div>
+          </dd>
+        </div>
+      </dl>
+      <div class="main-btn"><a href="https://www.rakuten.ne.jp/gold/kminori/yokuarusitumon.html">もっとみる</a></div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-inner flex">
+      <div class="footer-address">
+        <img src="./img/logo.png" width="30%" alt="みのりロゴ">
+        <p class="footer-tel">TEL: 0287-22-3339</p>
+        <a href="mailto:kminori@shop.rakuten.co.jp">kminori@shop.rakuten.co.jp</a>
+      </div>
+      <nav class="footer-nav flex">
+        <ul class="footer-nav-list">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#news">お知らせ</a></li>  
+          <li><a href="#item">商品一覧</a></li> 
+        </ul>
+        <ul class="footer-nav-list">
+          <li><a href="#Q &amp; A">Q &amp; A</a></li>
+          <li><a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cartempty/?shop_bid=">お買い物かご</a></li>
+          <li><a href="info.html">INFO</a></li>   
+        </ul>
+      </nav>
+    </div>
+    <p class="copylight">copylight@minori</p>
+  </footer>
+
+  <div class="totop"><a href="#"><img src="img/totop.svg" alt="上部へスクロール"></a></div><!-- /.totop -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+  jQuery(function() {
+   	// スムーススクロール
+		jQuery('a[href^="#"]').click(function() {
+			let header = jQuery(".header").innerHeight();
+			let speed = 300;
+			let id = jQuery(this).attr("href");
+			let target = jQuery("#" == id ? "html" : id);
+			let position = jQuery(target).offset().top - header;
+			if ("fixed" !== jQuery(".header").css("position")) {
+				position = jQuery(target).offset().top;
+			}
+			if (0 > position) {
+				position = 0;
+			}
+			jQuery("html, body").animate({
+					scrollTop: position
+				},
+				speed
+			);
+			return false;
+		});
+
+		// スクロール判定
+		jQuery(window).on("scroll", function() {
+
+			if (100 < jQuery(this).scrollTop()) {
+				jQuery('.totop').addClass('is-show');
+			} else {
+				jQuery('.totop').removeClass('is-show');
+			}
+		});
+
+		// クリック（メニュー）
+		jQuery('.header_nav ul li a').click(function() {
+			jQuery('.header_nav ul li a').removeClass('is-active');
+			jQuery(this).addClass('is-active');
+			return false;
+		});
+	
+		// アコーディオン
+		jQuery('.accordion_head').click(function() {
+				jQuery(this).next().slideToggle();
+				jQuery(this).children('.accordion_icon').toggleClass('is-open');
+		});
+	});
+</script>
+
+</body>
+</html>
+    
